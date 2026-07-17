@@ -1,0 +1,125 @@
+/* ===========================
+   TAMBAH PRODUK ADMIN
+=========================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: #f4f6f9;
+}
+
+/* Card */
+
+.card {
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.card-header {
+  background: linear-gradient(135deg, #198754, #157347);
+  padding: 18px 25px;
+}
+
+.card-header h3 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.card-body {
+  padding: 30px;
+}
+
+/* Label */
+
+.form-label {
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+/* Input */
+
+.form-control,
+.form-select {
+  border-radius: 10px;
+  border: 1px solid #ced4da;
+  padding: 12px;
+  transition: 0.3s;
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: #198754;
+  box-shadow: 0 0 10px rgba(25, 135, 84, 0.25);
+}
+
+/* Textarea */
+
+textarea {
+  resize: none;
+}
+
+/* Upload */
+
+input[type="file"] {
+  padding: 10px;
+}
+
+/* Tombol */
+
+.btn {
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.btn-success {
+  background: #198754;
+  border: none;
+}
+
+.btn-success:hover {
+  background: #157347;
+  transform: translateY(-2px);
+}
+
+.btn-secondary:hover {
+  transform: translateY(-2px);
+}
+
+/* Preview gambar */
+
+.preview {
+  width: 180px;
+  height: 180px;
+  border: 2px dashed #198754;
+  border-radius: 12px;
+  object-fit: cover;
+  display: block;
+  margin-top: 15px;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+  .card-body {
+    padding: 20px;
+  }
+
+  .card-header h3 {
+    font-size: 20px;
+  }
+
+  .btn {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}

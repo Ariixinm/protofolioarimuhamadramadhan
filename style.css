@@ -1,0 +1,332 @@
+/* ==========================
+   UMKM STORE
+   style.css
+========================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f8f9fa;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  overflow-x: hidden;
+}
+
+/* ================= Navbar ================= */
+
+.navbar {
+  background: #2e7d32;
+  padding: 12px 0;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+.navbar-brand {
+  font-size: 28px;
+  font-weight: bold;
+  color: #fff !important;
+}
+
+.nav-link {
+  color: #fff !important;
+  margin-left: 15px;
+  transition: 0.3s;
+}
+
+.nav-link:hover {
+  color: #ffd54f !important;
+}
+
+.search-box {
+  width: 600px;
+}
+
+/* ================= Hero ================= */
+
+.hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url("../img/umkm.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  height: 550px;
+
+  display: flex;
+  align-items: center;
+
+  color: #fff;
+}
+
+.hero h1 {
+  font-size: 55px;
+  font-weight: bold;
+}
+
+.hero p {
+  font-size: 20px;
+  margin: 20px 0;
+}
+
+.hero .btn {
+  padding: 12px 35px;
+  border-radius: 50px;
+}
+
+/* ================= Section ================= */
+
+section {
+  padding: 70px 0;
+}
+
+.section-title {
+  font-size: 35px;
+  font-weight: bold;
+  margin-bottom: 40px;
+  color: #2e7d32;
+}
+
+/* ================= Category ================= */
+
+.category-card {
+  background: #fff;
+  border-radius: 18px;
+  padding: 25px;
+  text-align: center;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+.category-card:hover {
+  transform: translateY(-8px);
+
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.category-card i {
+  color: #2e7d32;
+  margin-bottom: 15px;
+}
+
+/* ================= Flash Sale ================= */
+
+.flash {
+  background: #ff3d00;
+  color: white;
+  padding: 18px;
+  border-radius: 12px;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+/* ================= Product ================= */
+
+.product-card {
+  border: none;
+  border-radius: 18px;
+  overflow: hidden;
+  transition: 0.4s;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.product-card:hover {
+  transform: translateY(-10px);
+
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.product-card img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+}
+
+.product-card .card-body {
+  padding: 20px;
+}
+
+.product-card h5 {
+  font-weight: bold;
+}
+
+.product-card h4 {
+  color: #2e7d32;
+  margin-top: 10px;
+}
+
+.product-card .btn {
+  border-radius: 30px;
+}
+
+/* ================= About ================= */
+
+.about img {
+  border-radius: 20px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* ================= Testimoni ================= */
+
+.testimoni .card {
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  transition: 0.3s;
+}
+
+.testimoni .card:hover {
+  transform: translateY(-5px);
+}
+
+/* ================= Newsletter ================= */
+
+.newsletter {
+  background: #2e7d32;
+  color: white;
+  padding: 60px;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.newsletter input {
+  max-width: 500px;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* ================= Footer ================= */
+
+footer {
+  margin-top: 80px;
+  background: #2e7d32;
+  color: white;
+  padding: 60px 0;
+}
+
+footer h4 {
+  margin-bottom: 20px;
+}
+
+footer i {
+  margin-right: 12px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+footer i:hover {
+  color: #ffd54f;
+}
+
+/* ================= WhatsApp ================= */
+
+.whatsapp {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+
+  width: 60px;
+  height: 60px;
+
+  background: #25d366;
+
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: white;
+  font-size: 28px;
+
+  text-decoration: none;
+
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+
+  transition: 0.3s;
+}
+
+.whatsapp:hover {
+  transform: scale(1.1);
+
+  color: white;
+}
+
+/* ================= Button ================= */
+
+.btn-success {
+  background: #2e7d32;
+  border: none;
+}
+
+.btn-success:hover {
+  background: #1b5e20;
+}
+
+/* ================= Responsive ================= */
+
+@media (max-width: 992px) {
+  .search-box {
+    width: 100%;
+    margin: 20px 0;
+  }
+
+  .hero {
+    height: 450px;
+    text-align: center;
+  }
+
+  .hero h1 {
+    font-size: 42px;
+  }
+
+  .section-title {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    height: 400px;
+  }
+
+  .hero h1 {
+    font-size: 34px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  .category-card {
+    margin-bottom: 20px;
+  }
+
+  .newsletter {
+    padding: 30px;
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar-brand {
+    font-size: 22px;
+  }
+
+  .hero {
+    height: 350px;
+  }
+
+  .hero h1 {
+    font-size: 28px;
+  }
+
+  .hero p {
+    font-size: 15px;
+  }
+
+  .flash {
+    font-size: 18px;
+  }
+}

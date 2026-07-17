@@ -1,0 +1,195 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial;
+}
+
+body {
+  background: linear-gradient(135deg, #dbeafe, #fef3c7);
+}
+
+.container {
+  width: 95%;
+
+  margin: 40px auto;
+
+  background: white;
+
+  padding: 30px;
+
+  border-radius: 20px;
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* HEADER */
+
+.header {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  background: linear-gradient(135deg, #2563eb, #7c3aed);
+
+  padding: 20px;
+
+  border-radius: 15px;
+
+  margin-bottom: 25px;
+}
+
+.header h2 {
+  color: white;
+}
+
+.btn {
+  background: #f59e0b;
+
+  color: white;
+
+  padding: 12px 20px;
+
+  border-radius: 10px;
+
+  text-decoration: none;
+}
+
+/* FILTER */
+
+.filter {
+  display: flex;
+
+  gap: 15px;
+
+  align-items: end;
+
+  margin-bottom: 25px;
+}
+
+.filter div {
+  display: flex;
+
+  flex-direction: column;
+}
+
+input {
+  padding: 10px;
+
+  border: 1px solid #ddd;
+
+  border-radius: 8px;
+}
+
+button,
+.cetak {
+  background: #2563eb;
+
+  color: white;
+
+  border: none;
+
+  padding: 11px 18px;
+
+  border-radius: 8px;
+
+  text-decoration: none;
+
+  cursor: pointer;
+}
+
+.cetak {
+  background: #16a34a;
+}
+
+/* CARD */
+
+.card {
+  display: flex;
+
+  gap: 20px;
+
+  margin-bottom: 25px;
+}
+
+.card div {
+  flex: 1;
+
+  background: #eff6ff;
+
+  padding: 20px;
+
+  border-radius: 15px;
+
+  text-align: center;
+}
+
+.card h2 {
+  color: #2563eb;
+
+  margin-top: 10px;
+}
+
+/* TABLE */
+
+table {
+  width: 100%;
+
+  border-collapse: collapse;
+}
+
+th {
+  background: #2563eb;
+
+  color: white;
+
+  padding: 15px;
+}
+
+td {
+  padding: 12px;
+
+  text-align: center;
+
+  border-bottom: 1px solid #ddd;
+}
+
+tr:hover {
+  background: #eff6ff;
+}
+
+/* STATUS */
+
+.status {
+  background: #22c55e;
+
+  color: white;
+
+  padding: 7px 12px;
+
+  border-radius: 20px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 700px) {
+  .filter {
+    flex-direction: column;
+
+    align-items: stretch;
+  }
+
+  .card {
+    flex-direction: column;
+  }
+
+  .container {
+    overflow-x: auto;
+  }
+
+  table {
+    min-width: 800px;
+  }
+}

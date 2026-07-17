@@ -1,0 +1,47 @@
+body {
+  background: #f5f5f5;
+
+  font-family: "Segoe UI";
+}
+
+.card {
+  border-radius: 20px;
+
+  overflow: hidden;
+
+  margin-bottom: 50px;
+}
+
+.card-header {
+  padding: 25px;
+}
+
+.btn-success {
+  background: #2e7d32;
+
+  border: none;
+
+  padding: 12px;
+}
+
+.btn-success:hover {
+  background: #1b5e20;
+}
+
+.form-control {
+  padding: 12px;
+
+  border-radius: 10px;
+}
+
+label {
+  font-weight: 600;
+
+  margin-bottom: 5px;
+}
+
+@media (max-width: 768px) {
+  .card {
+    margin: 20px;
+  }
+}

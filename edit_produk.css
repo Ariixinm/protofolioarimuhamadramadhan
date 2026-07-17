@@ -1,0 +1,177 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", Arial, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+
+  background: linear-gradient(135deg, #dbeafe, #fef3c7);
+}
+
+/* CONTAINER */
+
+.container {
+  width: 500px;
+
+  margin: 40px auto;
+
+  background: white;
+
+  padding: 30px;
+
+  border-radius: 20px;
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* HEADER */
+
+.header {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  margin-bottom: 25px;
+
+  padding: 18px;
+
+  border-radius: 15px;
+
+  background: linear-gradient(135deg, #2563eb, #7c3aed);
+}
+
+.header h2 {
+  color: white;
+
+  font-size: 22px;
+}
+
+/* LABEL */
+
+label {
+  font-weight: bold;
+
+  color: #374151;
+}
+
+/* INPUT */
+
+input[type="text"],
+input[type="number"] {
+  width: 100%;
+
+  padding: 12px;
+
+  margin-top: 8px;
+
+  border: 1px solid #ddd;
+
+  border-radius: 10px;
+
+  outline: none;
+
+  font-size: 15px;
+}
+
+input:focus {
+  border-color: #2563eb;
+
+  box-shadow: 0 0 5px #93c5fd;
+}
+
+/* FILE INPUT */
+
+input[type="file"] {
+  margin-top: 10px;
+
+  padding: 10px;
+
+  width: 100%;
+
+  border-radius: 10px;
+
+  background: #f1f5f9;
+}
+
+/* GAMBAR LAMA */
+
+img {
+  width: 130px;
+
+  height: 130px;
+
+  object-fit: cover;
+
+  border-radius: 15px;
+
+  border: 4px solid white;
+
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* BUTTON */
+
+button {
+  width: 100%;
+
+  border: none;
+
+  cursor: pointer;
+}
+
+.btn-tambah {
+  display: inline-block;
+
+  background: #22c55e;
+
+  color: white;
+
+  padding: 12px 20px;
+
+  border-radius: 10px;
+
+  text-decoration: none;
+
+  font-weight: bold;
+
+  transition: 0.3s;
+}
+
+.btn-tambah:hover {
+  background: #15803d;
+
+  transform: translateY(-3px);
+}
+
+/* KEMBALI */
+
+.header .btn-tambah {
+  background: #f59e0b;
+}
+
+.header .btn-tambah:hover {
+  background: #d97706;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 600px) {
+  .container {
+    width: 95%;
+
+    margin: 20px auto;
+
+    padding: 20px;
+  }
+
+  .header {
+    flex-direction: column;
+
+    gap: 15px;
+  }
+}

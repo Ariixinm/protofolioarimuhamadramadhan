@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial;
+}
+
+body {
+  background: linear-gradient(135deg, #dbeafe, #fef3c7);
+
+  min-height: 100vh;
+}
+
+.container {
+  width: 450px;
+
+  margin: 50px auto;
+
+  background: white;
+
+  padding: 30px;
+
+  border-radius: 20px;
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.header {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  background: linear-gradient(135deg, #2563eb, #7c3aed);
+
+  padding: 20px;
+
+  border-radius: 15px;
+
+  margin-bottom: 25px;
+}
+
+.header h2 {
+  color: white;
+}
+
+.btn-kembali {
+  background: #f59e0b;
+
+  color: white;
+
+  padding: 10px 15px;
+
+  border-radius: 8px;
+
+  text-decoration: none;
+}
+
+label {
+  font-weight: bold;
+
+  color: #374151;
+}
+
+input {
+  width: 100%;
+
+  padding: 13px;
+
+  margin-top: 10px;
+
+  margin-bottom: 20px;
+
+  border: 1px solid #ddd;
+
+  border-radius: 10px;
+
+  font-size: 15px;
+}
+
+input:focus {
+  outline: none;
+
+  border-color: #2563eb;
+}
+
+button {
+  width: 100%;
+
+  padding: 13px;
+
+  border: none;
+
+  border-radius: 10px;
+
+  background: #22c55e;
+
+  color: white;
+
+  font-size: 16px;
+
+  font-weight: bold;
+
+  cursor: pointer;
+}
+
+button:hover {
+  background: #15803d;
+}
+
+@media (max-width: 600px) {
+  .container {
+    width: 90%;
+  }
+
+  .header {
+    flex-direction: column;
+
+    gap: 15px;
+  }
+}

@@ -1,0 +1,111 @@
+/* =========================
+   Wishlist CSS
+========================= */
+
+body {
+  background: #f5f7fb;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  margin-top: 40px;
+}
+
+h2 {
+  font-weight: 700;
+  color: #2d3436;
+  margin-bottom: 25px;
+}
+
+.table {
+  background: #fff;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.table thead {
+  background: #198754;
+  color: #fff;
+}
+
+.table th {
+  text-align: center;
+  vertical-align: middle;
+  padding: 15px;
+}
+
+.table td {
+  vertical-align: middle;
+  text-align: center;
+  padding: 15px;
+}
+
+.table img {
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 2px solid #e9ecef;
+  transition: 0.3s;
+}
+
+.table img:hover {
+  transform: scale(1.08);
+}
+
+.btn {
+  border-radius: 10px;
+  padding: 8px 18px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.btn-success:hover {
+  transform: translateY(-2px);
+}
+
+.btn-danger:hover {
+  transform: translateY(-2px);
+}
+
+.alert {
+  border-radius: 12px;
+  font-size: 17px;
+  font-weight: 600;
+  padding: 18px;
+}
+
+.card-total {
+  margin-top: 25px;
+  background: #fff;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.card-total h4 {
+  margin: 0;
+  color: #198754;
+  font-weight: 700;
+}
+
+.back-btn {
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .table {
+    font-size: 14px;
+  }
+
+  .table img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .btn {
+    margin: 3px 0;
+    width: 100%;
+  }
+}
